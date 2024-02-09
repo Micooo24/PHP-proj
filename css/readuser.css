@@ -1,0 +1,64 @@
+body {
+    height: 100%;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins, sans-serif";
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/purplesignup.jpg");
+}
+
+h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+    top: 90%;
+}
+
+table {
+    width: 80%;
+    background-color: #232b2b;
+    border-collapse: collapse; /* Remove table border */
+    border-spacing: 15px; /* Add spacing between cells */
+    padding: 20px;
+    margin-top: 250px;
+    margin-left: 150px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: none; /* Remove cell borders */
+    text-align: left;
+    color: white;
+  }
+  
+  td form, td a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  td form:hover, td a:hover {
+    background-color: #2980b9;
+  }
+  
+  td form {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  td a {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  

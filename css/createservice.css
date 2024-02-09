@@ -1,0 +1,229 @@
+/* Add your styles for the form and table containers */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins, sans-serif";
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Add text color as needed */
+  text-align: center; /* Adjust text alignment as needed */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 100px auto 0px;
+  
+}
+
+.success-popup {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: none;
+}
+
+.form-container {
+  max-width: 1000px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  float: left;
+  width: 400px; /* Set the width of the form container to 50% */
+}
+
+.container .table-container {
+  height: 80vh;
+  min-height: 410px;
+  float: right;
+  width: 120%;
+  resize: horizontal;
+  overflow: hidden;
+}
+
+.form-container h2,
+.table-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container form {
+  display: grid;
+  gap: 15px;
+}
+
+.form-container label {
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: none; /* Remove borders */
+  border-radius: 4px;
+}
+
+.form-container input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px; /* Add border-radius for the submit button */
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#servicesTable {
+  width: 100%; /* Set table width to 100% */
+  border-collapse: collapse;
+  max-height: 400px; /* Set a fixed height for the table */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#servicesTable th,
+#servicesTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center; /* Center the text in cells */
+  color: black; /* Set the text color to black */
+}
+
+#servicesTable th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Add animation for fade in and fade out */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.success-popup.show {
+  display: block;
+  animation: fadeInOut 5s forwards; /* Adjust the duration as needed */
+}
+
+.table-container {
+  position: relative;
+  max-width: 1200px; /* Increase the max-width to 1200px */
+  margin: 500px auto 0px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the container height */
+  padding-bottom: 50px;
+}
+
+
+.table-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 500px auto 0px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the container height */
+  position: relative;
+  height: 500px; /* Set a fixed height for the container */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the container height */
+  padding-bottom: 50px; 
+}
+
+
+
+.form-container,
+.table-container {
+  max-width: 1000px;
+  margin: 50px auto 0px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the container height */
+}
+
+.table-container td {
+  text-align: center;
+}
+
+.table-container a {
+  width: 100px; /* Choose a suitable width for the buttons */
+}
+
+.access-denied {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(to right, #0065ff 0%, #6942ef 33%, #6554c0 66%, #008cff 100%);
+  color: white;
+  padding: 20px;
+  margin-top: -700px;
+  width: 200%;
+  margin-left: 0%;
+}
+
+.error-popup {
+  position: fixed;
+  text-align: center;
+  background-image: linear-gradient(to right, #ff3e3e 0%, #ff5c5c 33%, #ff7a7a 66%, #ff9999 100%);
+  color: white;
+  padding: 20px;
+  width: 200%;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.error-popup.show {
+  display: block;
+  animation: fadeInOut 5s forwards;
+}
+
+.table-container td a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background-color: #4caf50;
+}
+
+
+
+.table-container td a.delete {
+  background-color: #f44336;
+}

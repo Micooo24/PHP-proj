@@ -1,0 +1,335 @@
+/* styles.css */
+
+body {
+    font-family: 'lato', sans-serif;
+    overflow-y: auto;
+    overflow-y: scroll;
+    color: black;
+    background-image: linear-gradient(to top, #fff, #000);
+    background-size: cover;
+    /* Adjust the height to desired stretching amount */
+    height: 100vh;
+    background-position: top 50%;
+  }
+  
+
+
+.h1{
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add relative positioning to the container */
+  margin-bottom: 32px;
+}
+
+.hero-container form {
+  display: flex;
+  gap: 16px;
+  position: absolute; /* Make the form absolutely positioned */
+  bottom: 0; /* Position the form at the bottom of the container */
+  left: 50%; /* Center the form horizontally */
+  transform: translateX(-50%); /* Offset the form's position to center it properly */
+}
+
+.button1,
+.button2 {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-container form {
+    gap: 8px;
+  }
+
+  .button1,
+  .button2 {
+    font-size: 14px;
+  }
+}
+
+.banner-area {
+  background-image: url("../images/retro.jpg");
+  background-size: cover;
+  background-position: center center;
+  top: 0;
+  left: 0; /* Set the left property to 0 */
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+
+.banner-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: .7;
+}
+
+.banner-area h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+   font-family: 'Julius Sans One', sans-serif;
+
+}
+
+  
+
+
+
+
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  h2 small {
+    font-size: 0.5em;
+  }
+  
+  .responsive-table {
+      margin-top: 7300px; /* Adjust the value as needed */
+      
+  }
+  
+  .responsive-table .table-row {
+      margin-top: 10px; /* Adjust the value as needed */
+      color: #232b2b;
+  }
+  
+  .responsive-table li {
+      border-radius: 3px;
+      padding: 25px 0%; /* Adjust the value as needed for horizontal stretching */
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      padding-left: 500px;
+      padding-right: 550px;
+  }
+  
+  .responsive-table .table-header {
+    background-color:  #232b2b;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: white;
+  }
+  
+  .responsive-table .table-row {
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    left: 67px;
+    text-align: center;
+    background-color:  #232b2b;
+    color: white;
+  }
+  
+  .responsive-table .col-1 {
+      flex-basis: 10%;
+      margin-left: -70%; /* Adjust the value as needed to move the content to the left */
+      text-align: center;
+  }
+  
+  .responsive-table .col-2 {
+    flex-basis: 40%;
+    margin-left: 0%;
+    text-align: center;
+  }
+  
+  .responsive-table .col-3 {
+    flex-basis: 40%;
+    text-align: center;
+    margin-left: 0%;
+  }
+  
+  .responsive-table .col-4 {
+    flex-basis: 25%;
+    text-align: center;
+
+  }
+  
+  .responsive-table .col-5{
+    flex-basis: 25%;
+    text-align: center;
+  }
+
+  .responsive-table .col-6,
+  .responsive-table .col-7 {
+      flex-basis: 10%;
+      text-align: center;
+  }
+  
+  .responsive-table .col-6 a,
+  .responsive-table .col-7 form {
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .responsive-table .col-6 a:hover,
+  .responsive-table .col-7 form:hover {
+      background-color: #2980b9;
+  }
+  
+  .responsive-table .col-7 {
+      margin-right: -95%;
+    }
+  
+
+    .responsive-table .col-6 a {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      .responsive-table .col-7 form {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      
+  @media all and (max-width: 767px) {
+    .responsive-table .table-header {
+      display: none;
+    }
+  
+  
+    .responsive-table li {
+      display: block;
+    }
+  
+    .responsive-table .col {
+      flex-basis: 100%;
+    }
+  
+    .responsive-table .col {
+      display: flex;
+      padding: 10px 0;
+    }
+  
+    .responsive-table .col:before {
+      color: #6C7A89;
+      padding-right: 10px;
+      content: attr(data-label);
+      flex-basis: 50%;
+      text-align: right;
+    }
+  }
+  
+
+
+
+
+/* Card layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem 1rem; /* Adjust padding to better fit the card size */
+  border-radius: 8px;
+  width: 320px;
+  height: 350px;
+  margin-top: 100px;
+}
+
+.contact {
+  box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+
+/* Card icon */
+.card .icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px; /* Increase spacing between icon and title */
+}
+
+.card img {
+  width: 100%;
+}
+
+/* Card title */
+.card h3 {
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+/* Card description */
+.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 14px;
+  margin-bottom: 24px; /* Increase spacing between description and buttons */
+}
+
+/* Card buttons */
+.card button,
+.card input {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 8px; /* Adjust border-radius for consistency */
+  border: none; /* Remove border for a cleaner look */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+}
+
+/* Card input specific style */
+.card input {
+  background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}

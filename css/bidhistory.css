@@ -1,0 +1,200 @@
+/* Add padding to the body to avoid overlapping with the fixed header */
+body {
+    padding-top: 50px; /* Adjust the value based on your header height */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Set text color to be visible on the background */
+  }
+  
+  /* Reset styles for table elements */
+  table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Style table header */
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style table body */
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add a border-bottom to separate rows */
+  }
+  
+  /* Style alternating rows */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style table container */
+  #servicesTable {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 30px; /* Apply border radius of 30px to the table */
+    overflow: hidden;
+  }
+  
+  /* Optional: Add hover effect on rows */
+  tr:hover {
+    background-color: #e2e2e2;
+  }
+  
+  
+  /* Make the site scrollable */
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+  }
+  
+  /* Optional: Add a fixed header */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #bidHistoryTable {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 30px; /* Apply border radius of 30px to the table */
+    overflow: hidden;
+    margin-top: 50px; /* Adjust the value based on your desired spacing */
+    background: rgba(255, 255, 255, 0.2); /* Glass background with transparency */
+    backdrop-filter: blur(10px); /* Gaussian blur effect */
+    width: 80%; /* Set a width for the table */
+    margin: 0 auto; /* Center the table horizontally */
+  }
+  
+  /* Style each table row as a separate box */
+  #bidHistoryTable tr {
+    display: table-row;
+    margin: 10px 0; /* Top and bottom margin for separation */
+    border-radius: 30px; /* Apply border radius of 30px to each row */
+    background-color: rgba(255, 255, 255, 0.2); /* Individual box background with transparency */
+    border: 1px solid #ddd;
+  }
+  
+  /* Style table header */
+  #bidHistoryTable th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center; /* Center the text in the header */
+    vertical-align: middle; /* Align the header text to the middle of the cells */
+  }
+  
+  /* Style table body */
+  #bidHistoryTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add a border-bottom to separate rows */
+    vertical-align: middle; /* Align the body cell text to the middle of the cells */
+  }
+
+
+  /* Style alternating rows */
+#bidHistoryTable tr:nth-child(even) {
+    background-color: rgba(105, 66, 239, 0.5); /* Alternate between colors with transparency */
+    backdrop-filter: blur(10px); /* Gaussian blur effect */
+    background-image: linear-gradient(to right, #0065ff 0%, #6942ef 33%, #6554c0 66%, #008cff 100%); /* Gradient background with specified colors */
+    color: black;
+  }
+  
+  /* Optional: Add hover effect on rows */
+  #bidHistoryTable tr:hover {
+    background-color: #e2e2e2;
+  }
+  
+  h2 {
+    margin-top: 85px; /* Adjust the value based on your desired spacing */
+    text-align: center;
+    color: white;
+  }
+  
+  #bidHistoryTable th,
+  #bidHistoryTable td {
+    text-align: center;
+  }
+  
+  /* Bold text in the first row */
+  #bidHistoryTable tr:first-child td {
+    font-weight: bold;
+  }
+  
+  
+  .access-denied {
+    text-align: center;
+    background-image: linear-gradient(to right, #0065ff 0%, #6942ef 33%, #6554c0 66%, #008cff 100%);
+    color: white;
+    padding: 20px; /* Adjust the padding according to your design */
+    margin-top: 50px; /* Adjust the top margin for spacing */
+  }
+  
+  .p{
+        text-align: center;
+        background-image: linear-gradient(to right, #0065ff 0%, #6942ef 33%, #6554c0 66%, #008cff 100%);
+        color: white;
+        padding: 20px; /* Adjust the padding according to your design */
+        margin-top: 50px; /* Adjust the top margin for spacing */
+    
+    
+  }
+
+  .access-denied {
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(to right, #0065ff 0%, #6942ef 33%, #6554c0 66%, #008cff 100%);
+    color: white;
+    padding: 20px;
+    margin-top: -700px;
+    width: 200%;
+    margin-left: 0%;
+  }
+
+.edit-button {
+    background-color: #008cff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 30px;
+  }
+
+  .edit-button, .delete-button {
+    background-color: #008cff;
+    color: white;
+    padding: 10px
+   
+  20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px
+   
+  2px;
+    border-radius: 30px;
+  }
+  
+
+
+  

@@ -1,0 +1,94 @@
+/* Add your styles for the form container */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins, sans-serif";
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Add text color as needed */
+    text-align: center; /* Adjust text alignment as needed */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Maximum width for landscape size */
+    margin: 50px auto 20px; /* Center the containers horizontally, add top margin, and reduce bottom margin */
+  }
+  
+  .form-container {
+    flex: 1.5; /* Adjust flex to allocate more space to the form container */
+    min-width: 400px; /* Set a minimum width for the form container */
+    max-width: 800px; /* Adjust the width as needed for landscape size */
+    margin: 50px auto 20px; /* Center the form container */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 30px; /* Add border-radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-container form {
+    display: grid;
+    gap: 15px;
+  }
+  
+  .form-container label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-container input,
+  .form-container textarea,
+  .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none; /* Remove borders */
+    border-radius: 4px;
+  }
+  
+  .form-container input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add your styles for the table container */
+  #servicesTable {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse;
+    max-width: 800px; /* Adjust the width as needed for landscape size */
+    margin: 50px auto 20px; /* Center the table container */
+    color: black;
+  }
+  
+  #servicesTable th,
+  #servicesTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center; /* Center the text in cells */
+    color: black; /* Set the text color to black */
+  }
+  
+  #servicesTable th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  

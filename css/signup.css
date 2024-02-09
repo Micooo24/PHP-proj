@@ -1,0 +1,723 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Add text color as needed */
+    text-align: center; /* Adjust text alignment as needed */
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: transparent;
+    border: 2pz solid rgba(255,255,255,.25);
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    overflow:hidden;
+    margin-top: 230px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 10px 0.002px #6942ef, 0 0 15px #6942ef, 0 0 15px #6942ef; ;
+    border-radius: 30px;
+    display: flex; /* Add this line */
+    justify-content: space-between; /* Add this line if you want some space between the buttons */
+}
+
+ 
+.toggle-btn{
+     padding: 10px 30px;
+     cursor: pointer;
+     background: transparent;
+     border: 0;
+     outline: none;
+     position: relative; 
+     color: white;
+     font-weight: bold;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    background-size: 400%;
+    background-position: 0% 0%;
+    transition: .5s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 30px;
+        background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+        background-size: 500%;
+        background-position: 0% 0%;
+        filter: blur(10px);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.2s;
+    }
+
+    &:hover {
+        animation: gradientRotate 2s infinite;
+        &::before {
+            opacity: 1;
+            animation: gradientRotate 2s infinite;
+        }
+    }
+}
+
+@keyframes gradientRotate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.social-icons {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.social-icons h1 {
+    top: -10px;
+    margin: 20px 12px 0; /* Adjust the margin-top value to move the text down */
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500%;
+    position: relative;
+    animation: gradientRotate 2s linear infinite;
+   
+}
+
+
+
+.input-group{
+    top: 150px;
+    position: absolute;
+    width: 280px; 
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;  
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: white; /* Add this line to set text color to white */
+}
+
+.input-field::placeholder {
+    color: white;
+}
+
+
+.input-field::placeholder {
+    color: white;
+}
+.input-box input.focus::placeholder {
+    color: transparent;
+}
+
+@keyframes gradientRotate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    position: relative;
+    background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    background-size: 400%;
+    background-position: 0% 0%;
+    color: #fff;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 30px;
+        background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+        background-size: 500%;
+        background-position: 0% 0%;
+        filter: blur(10px);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.2s;
+        box-shadow: 0 0 10px #6942ef; /* Initial glow effect */
+    }
+
+    &:hover {
+        animation: gradientRotate 2s linear infinite;
+        &::before {
+            opacity: 1;
+            animation: gradientRotate 2s linear infinite;
+            box-shadow: 0 0 20px #6942ef, 0 0 30px #6942ef, 0 0 40px #6942ef; /* Glow effect when hovered */
+        }
+    }
+    
+    &:active {
+        color: #c3c4d5;
+    }
+    
+    &:focus {
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+
+
+span{
+    color: #fff;
+    font-size: 12px;
+    bottom: 63px;
+    position: absolute;
+}
+#freelancer{
+    left: 50px;
+}
+#client{
+    left: 450px;
+}
+
+
+#freelancer-form {
+    top: 150px; /* Adjust this value as needed */
+}
+
+.hero h1{
+
+    text-align: center;
+}
+
+
+/*Header*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+  body{
+    background: url(../images/purplevid.mp4);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+  }
+  header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+  }
+  #chk1{
+    display: none;
+     
+     
+  }
+  i{
+    color: #fff;
+    cursor: pointer;
+  }
+  header .logo{
+    flex: 1;
+    background: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 50px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 15px;
+    animation: gradientRotate 2s linear infinite;
+  }
+  header .search-box{
+    flex: 1;
+    position: relative;
+  }
+  .search-box input{
+    width:100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background:#f2f2f2;
+    border-radius: 30px;
+    color:gray;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+     
+  }
+  
+  .search-box button{
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 30px;
+    border:none;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: scale(0.9);
+    background:  #6942ef;
+    color: #fff;
+  }
+  header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header ul li{
+    list-style: none;
+  }
+  header ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+  }
+  header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+  }
+  header .menu{
+    font-size: 2.5em;
+    display: none;
+  }
+  @media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+     
+    header .menu{
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+        
+    }
+  
+  }
+  
+
+  header {
+    position: fixed;
+    top: 0;
+    /* Add your other styles here */
+}
+
+
+
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: transparent;
+    border: 2pz solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    padding: 5px;
+    overflow:hidden;
+    margin-top: 230px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 10px 0.002px #6942ef, 0 0 15px #6942ef, 0 0 15px #6942ef; ;
+    border-radius: 30px;
+    display: flex; /* Add this line */
+    justify-content: space-between; /* Add this line if you want some space between the buttons */
+}
+
+ 
+.toggle-btn{
+     padding: 10px 30px;
+     cursor: pointer;
+     background: transparent;
+     border: 0;
+     outline: none;
+     position: relative; 
+     color: white;
+     font-weight: bold;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    background-size: 400%;
+    background-position: 0% 0%;
+    transition: .5s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 30px;
+        background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+        background-size: 500%;
+        background-position: 0% 0%;
+        filter: blur(10px);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.2s;
+    }
+
+    &:hover {
+        animation: gradientRotate 2s infinite;
+        &::before {
+            opacity: 1;
+            animation: gradientRotate 2s infinite;
+        }
+    }
+}
+
+@keyframes gradientRotate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.social-icons {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.social-icons h1 {
+    top: -10px;
+    margin: 0 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500%;
+    position: relative;
+    animation: gradientRotate 2s linear infinite;
+}
+
+
+.input-group{
+    top: 150px;
+    position: absolute;
+    width: 280px; 
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;  
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    
+}
+
+.input-field::placeholder{
+    color: white;
+}
+
+@keyframes gradientRotate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    position: relative;
+    background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    background-size: 400%;
+    background-position: 0% 0%;
+    color: #fff;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 30px;
+        background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+        background-size: 500%;
+        background-position: 0% 0%;
+        filter: blur(10px);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.2s;
+        box-shadow: 0 0 10px #6942ef; /* Initial glow effect */
+    }
+
+    &:hover {
+        animation: gradientRotate 2s linear infinite;
+        &::before {
+            opacity: 1;
+            animation: gradientRotate 2s linear infinite;
+            box-shadow: 0 0 20px #6942ef, 0 0 30px #6942ef, 0 0 40px #6942ef; /* Glow effect when hovered */
+        }
+    }
+    
+    &:active {
+        color: #c3c4d5;
+    }
+    
+    &:focus {
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+
+
+span{
+    color: #fff;
+    font-size: 12px;
+    bottom: 63px;
+    position: absolute;
+}
+#freelancer{
+    left: 50px;
+}
+#client{
+    left: 450px;
+}
+
+
+#freelancer-form {
+    top: 150px; /* Adjust this value as needed */
+}
+
+.hero h1{
+
+    text-align: center;
+}
+
+
+/*Header*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+  body{
+    background: url(../images/purplevid.mp4);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+  }
+  header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+  }
+  #chk1{
+    display: none;
+     
+     
+  }
+  i{
+    color: #fff;
+    cursor: pointer;
+  }
+  header .logo{
+    flex: 1;
+    background: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 50px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 15px;
+    animation: gradientRotate 2s linear infinite;
+  }
+  header .search-box{
+    flex: 1;
+    position: relative;
+  }
+  .search-box input{
+    width:100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background:#f2f2f2;
+    border-radius: 30px;
+    color:gray;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+     
+  }
+  
+  .search-box button{
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 30px;
+    border:none;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: scale(0.9);
+    background:  #6942ef;
+    color: #fff;
+  }
+  header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header ul li{
+    list-style: none;
+  }
+  header ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+  }
+  header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+  }
+  header .menu{
+    font-size: 2.5em;
+    display: none;
+  }
+  @media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+     
+    header .menu{
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+        
+    }
+  
+  }
+  
+
+  header {
+    position: fixed;
+    top: 0;
+    /* Add your other styles here */
+}
+
+
+

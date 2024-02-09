@@ -1,0 +1,43 @@
+/* your-styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-image: url('../images/purplebg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.about-section h2, .about-section h3 {
+    font-size: 32px;
+    color: #d3ffd8;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #d3ffd8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Add additional styles as needed */

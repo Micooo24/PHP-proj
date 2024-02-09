@@ -1,0 +1,38 @@
+/* Add your custom styles for the Show Transaction page */
+
+body {
+    padding-top: 50px; /* Adjust the value based on your header height */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Set text color to be visible on the background */
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+table {
+    width: 80%;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 250px;
+    margin-left: 150px; /* Move the table to the right */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+h2.transaction-heading {
+    margin-top: 100px; /* Adjust this value to position the heading below the image */
+}

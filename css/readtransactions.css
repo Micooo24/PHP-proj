@@ -1,0 +1,147 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins, sans-serif";
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins, sans-serif";
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -200px;
+  }
+  .table-container {
+    width: 80%;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  td {
+    text-align: center;
+    color: white;
+  }
+  
+  form {
+    display: inline-block;
+  }
+  
+  input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  .table-container {
+    width: 80%;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  td {
+    text-align: center;
+    color: black;
+  }
+  
+  form {
+    display: inline-block;
+  }
+  
+  input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  

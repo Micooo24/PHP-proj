@@ -1,0 +1,181 @@
+/* Add padding to the body to avoid overlapping with the fixed header */
+body {
+    padding-top: 50px; /* Adjust the value based on your header height */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Set text color to be visible on the background */
+  }
+  
+  /* Reset styles for table elements */
+  table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Style table header */
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style table body */
+  td {
+    padding: 10px;
+    text-align: center; /* Center the text in the body cells */
+    border-bottom: 1px solid #ddd; /* Add a border-bottom to separate rows */
+  }
+  
+
+  /* Style alternating rows in #servicesTable */
+#servicesTable tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.2); /* Transparent grey background for odd rows */
+    color: black; /* Text color for odd rows */
+}
+
+/* Style alternating rows in #bidsTable */
+#bidsTable tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.2); /* Transparent grey background for odd rows */
+    color: black; /* Text color for odd rows */
+}
+  /* Style alternating rows */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style table container */
+  #servicesTable {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 50px; /* Adjust the value based on your desired spacing */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 80%;
+
+  }
+  
+  /* Optional: Add hover effect on rows */
+  tr:hover {
+    background-color: #e2e2e2;
+  }
+  
+  /* Make the site scrollable */
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+  }
+  
+  /* Optional: Add a fixed header */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the bids table */
+  #bidsTable {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 20px; /* Adjust the value to move the table upward */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 80%;
+    margin: 100px;
+  }
+  
+ /* Continue styling the bids table */
+#bidsTable td {
+    padding: 10px;
+    text-align: center; /* Center the text in the body cells */
+    border-bottom: 1px solid #ddd; /* Add a border-bottom to separate rows */
+    vertical-align: middle; /* Align the body cell content with the header text */
+  }
+  
+  /* Style alternating rows */
+  #bidsTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style the bids table container */
+  #bidsTableContainer {
+    overflow-y: scroll; /* Add a scrollbar when the table content overflows the container */
+    height: 500px; /* Set a height for the container */
+    margin-top: 50px; /* Adjust the value based on your desired spacing */
+  }
+  
+  /* Optional: Add hover effect on rows */
+  #bidsTable tr:hover {
+    background-color: #e2e2e2;
+  }
+  
+  /* Responsive design: Adjust table layout for smaller screens */
+  @media (max-width: 768px) {
+    #bidsTable {
+      width: 100%; /* Make the table full-width on smaller screens */
+    }
+  
+    #bidsTable tr {
+      display: block; /* Display each row as a block on smaller screens */
+      margin: 0; /* Remove top and bottom margin for separation on smaller screens */
+      border-radius: 0; /* Remove border radius on smaller screens */
+      background-color: transparent; /* Remove individual box background on smaller screens */
+      border: none; /* Remove border on smaller screens */
+    }
+  
+    #bidsTable th {
+      display: block; /* Display header cells as blocks on smaller screens */
+      text-align: left; /* Align header text to the left on smaller screens */
+      margin-bottom: 10px; /* Add margin below header cells on smaller screens */
+    }
+  
+    #bidsTable td {
+      display: block; /* Display body cells as blocks on smaller screens */
+      text-align: left; /* Align body cell content to the left on smaller screens */
+    }
+  }
+  
+  .job-heading {
+    margin-top: 150px; /* Adjust the value to move the heading down */
+    text-align: center; /* Center the heading horizontally */
+    margin-left: -100px;
+    color: white;
+}
+
+
+.access-denied {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(to right, #0065ff 0%, #6942ef 33%, #6554c0 66%, #008cff 100%);
+  color: white;
+  padding: 20px;
+  margin-top: -700px;
+  width: 200%;
+  margin-left: 0%;
+}
+
+.no-bids {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(to right, #0065ff 0%, #6942ef 33%, #6554c0 66%, #008cff 100%);
+  color:white;
+  padding: 20px;
+  margin-top: -150px;
+  width: 100%;
+  margin-left: 0%;
+}

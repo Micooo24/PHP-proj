@@ -1,0 +1,76 @@
+/* body.css */
+body {
+    padding-top: 50px; /* Adjust the value based on your header height */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/purplesignup.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Set text color to be visible on the background */
+  }
+  
+  
+  .form-container {
+    width: 500px;
+    margin-top: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    left: 20%;
+    position: absolute;
+    transform: translateX(50%);
+    z-index: 2; /* Set z-index to 2 */
+  }
+  
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+  }
+  
+  .form-container input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+
+  .access-denied {
+    text-align: center;
+    background-image: linear-gradient(to right, #0065ff 0%, #6942ef 33%, #6554c0 66%, #008cff 100%);
+    color: white;
+    padding: 20px; /* Adjust the padding according to your design */
+    margin-top: 50px; /* Adjust the top margin for spacing */
+  }
+
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    resize: none; /* Prevent resizing of the textarea */
+  }
+  
